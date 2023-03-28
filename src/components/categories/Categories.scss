@@ -1,0 +1,11 @@
+@import "../../styles/_breakpoints.scss";
+
+.CategoryContainer {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
