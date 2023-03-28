@@ -34,7 +34,7 @@ const Success = () => {
     };
 
     data && createOrder();
-  }, [cart, data, currentUser]);
+  }, [cart, data, currentUser, dispatch]);
 
   return (
     <motion.div
