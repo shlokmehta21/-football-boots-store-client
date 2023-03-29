@@ -18,8 +18,8 @@ const Products: React.FC<Props> = ({ category, filters, sort }) => {
       try {
         const result = await axios.get(
           category
-            ? `https://football-boots-store-api-production.up.railway.app/api/products?category=${category}`
-            : `https://football-boots-store-api-production.up.railway.app/api/products`
+            ? `https://footballstoreapi.up.railway.app/api/products?category=${category}`
+            : `https://footballstoreapi.up.railway.app/api/products`
         );
         console.log(result.data);
 
