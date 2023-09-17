@@ -30,7 +30,7 @@ const Product = () => {
         const response = await publicRequest.get(`/products/find/${productId}`);
         setProduct(response.data);
       } catch (error) {
-        console.log(error);
+        console.log(error.body);
       }
     };
 

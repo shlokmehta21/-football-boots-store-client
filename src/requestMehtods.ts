@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASEURL = "https://footballstoreapi.up.railway.app/api/";
+const BASEURL =
+  "https://football-boots-store-jovt0p32r-greenberg-hammeed.vercel.app/api/";
 
 const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
 const currentUser = user && JSON.parse(user).currentUser;
