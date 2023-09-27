@@ -15,6 +15,8 @@ const Products: React.FC<Props> = ({ category, filters, sort }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  console.log(filters);
+
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);

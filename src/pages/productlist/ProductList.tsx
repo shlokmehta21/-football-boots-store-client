@@ -14,7 +14,8 @@ const ProductList = () => {
   const [sort, setSort] = useState<string>("newest");
 
   const handleFilters = (event: React.FormEvent) => {
-    const value = (event.target as HTMLSelectElement).value;
+    const value = (event.target as HTMLSelectElement).value.toLocaleLowerCase();
+
     setFilters({
       ...filters,
       [(event.target as HTMLSelectElement).name]: value,
@@ -55,11 +56,21 @@ const ProductList = () => {
             onChange={handleFilters}
           >
             <option disabled>Size</option>
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
+            <option>4</option>
+            <option>4.5</option>
+            <option>5</option>
+            <option>5.5</option>
+            <option>6</option>
+            <option>6.5</option>
+            <option>7</option>
+            <option>7.5</option>
+            <option>8</option>
+            <option>8.5</option>
+            <option>9</option>
+            <option>9.5</option>
+            <option>10</option>
+            <option>10.5</option>
+            <option>11</option>
           </select>
         </div>
 
